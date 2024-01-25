@@ -68,6 +68,7 @@ button {
   font-weight: bold;
   font-size: 1em;
   border: none;
+  cursor: pointer;
 }
 
 span {
@@ -461,6 +462,10 @@ main {
     font-size: .8rem;
     background-color: var(--color-span);
     font-weight: 600;
+  }
+
+  .big-in h3 {
+    font-size: 4vw;;
   }
 
   .last button {

@@ -1,5 +1,4 @@
 import Xarrow from 'react-xarrows';
-import { useMediaQuery } from 'react-responsive';
 import { logo, arrow, box_l, box_r } from './assets/images';
 import { useRef } from 'react';
 import './App.css';
@@ -9,8 +8,6 @@ function App() {
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
   const box4Ref = useRef(null);
-
-  const isSmallScreen = useMediaQuery({ query: '(max-width: 1080px)' });
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -59,7 +56,6 @@ function App() {
           <div className="second-info-text left-text"  >
             <h2>sales <span>on</span></h2>
             <p>Nossa solução de gerenciamento de redes sociais. Vamos além da simples gestão; criamos conteúdo envolvente, aumentamos o engajamento e posicionamos sua marca como líder no cenário digital.</p>
-            {isSmallScreen ? (
               <Xarrow
                 start="box-1"
                 end="box-2"
@@ -68,16 +64,6 @@ function App() {
                 path="grid"
                 curveness={1}
               />
-            ) : (
-              <Xarrow
-                start="box-1"
-                end="box-2"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
-            )}
           </div>
           
         </div>
@@ -88,7 +74,6 @@ function App() {
           <div className="second-info-text right-text" id='box-2'>
             <h2>sales <span>pulse</span></h2>
             <p>É  o ritmo acelerado dos seus anúncios online. Não lançamos apenas anúncios; orquestramos uma sinfonia digital que ressoa com seu público-alvo. Das estratégias de segmentação à análise de desempenho, garantimos que cada anúncio seja uma nota perfeita para o crescimento do seu negócio.</p>
-            {isSmallScreen ? (
               <Xarrow
                 start="box-2"
                 end="box-3"
@@ -97,16 +82,6 @@ function App() {
                 path="grid"
                 curveness={1}
               />
-            ) : (
-              <Xarrow
-                start="box-2"
-                end="box-3"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
-            )}
           </div>
         </div>
         <div className="box mobile-after" id='box-left-3'>
@@ -116,7 +91,6 @@ function App() {
           <div className="second-info-text left-text" id='box-3'>
             <h2>sales <span>web</span></h2>
             <p>Nossa solução para sites e landing pages. É sobre dar vida à sua presença digital. Desde a concepção até a otimização contínua, garantimos que sua presença online seja uma poderosa extensão do seu negócio, capturando a essência da sua marca e convertendo visitantes em clientes satisfeitos.</p>
-            {isSmallScreen ? (
               <Xarrow
                 start="box-3"
                 end="box-4"
@@ -125,16 +99,6 @@ function App() {
                 path="grid"
                 curveness={1}
               />
-            ) : (
-              <Xarrow
-                start="box-3"
-                end="box-4"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
-            )}
           </div>
         </div>
         <div className="box" id='box-right-4'>
