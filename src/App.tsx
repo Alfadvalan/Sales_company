@@ -53,14 +53,16 @@ function App() {
       </div>
       <div className="second-info-container">
         <div className="box mobile-after" id='box-left-1' >
-          <img src={box_l} alt="" ref={box1Ref}/>
-          <div className="second-info-text left-text" >
+          <div id='box-1'>
+            <img src={box_l} alt="" ref={box1Ref}/>
+          </div>
+          <div className="second-info-text left-text"  >
             <h2>sales <span>on</span></h2>
             <p>Nossa solução de gerenciamento de redes sociais. Vamos além da simples gestão; criamos conteúdo envolvente, aumentamos o engajamento e posicionamos sua marca como líder no cenário digital.</p>
             {isSmallScreen ? (
               <Xarrow
-                start={box1Ref}
-                end={box2Ref}
+                start="box-1"
+                end="box-2"
                 startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
@@ -68,9 +70,9 @@ function App() {
               />
             ) : (
               <Xarrow
-                start={box1Ref}
-                end={box2Ref}
-                startAnchor="right"
+                start="box-1"
+                end="box-2"
+                startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
                 curveness={1}
@@ -80,14 +82,16 @@ function App() {
           
         </div>
         <div className="box mobile-after" id='box-right-2' >
-          <img src={box_r} alt="" ref={box2Ref}/>
-          <div className="second-info-text right-text">
+          <div id='box-2'>
+            <img src={box_r} alt="" ref={box2Ref}/>
+          </div>
+          <div className="second-info-text right-text" id='box-2'>
             <h2>sales <span>pulse</span></h2>
             <p>É  o ritmo acelerado dos seus anúncios online. Não lançamos apenas anúncios; orquestramos uma sinfonia digital que ressoa com seu público-alvo. Das estratégias de segmentação à análise de desempenho, garantimos que cada anúncio seja uma nota perfeita para o crescimento do seu negócio.</p>
             {isSmallScreen ? (
               <Xarrow
-                start={box2Ref}
-                end={box3Ref}
+                start="box-2"
+                end="box-3"
                 startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
@@ -95,9 +99,9 @@ function App() {
               />
             ) : (
               <Xarrow
-                start={box2Ref}
-                end={box3Ref}
-                startAnchor="left"
+                start="box-2"
+                end="box-3"
+                startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
                 curveness={1}
@@ -106,14 +110,16 @@ function App() {
           </div>
         </div>
         <div className="box mobile-after" id='box-left-3'>
-          <img src={box_l} alt="" ref={box3Ref}/>
-          <div className="second-info-text left-text">
+          <div id='box-3'>
+            <img src={box_l} alt="" ref={box3Ref}/>
+          </div>
+          <div className="second-info-text left-text" id='box-3'>
             <h2>sales <span>web</span></h2>
             <p>Nossa solução para sites e landing pages. É sobre dar vida à sua presença digital. Desde a concepção até a otimização contínua, garantimos que sua presença online seja uma poderosa extensão do seu negócio, capturando a essência da sua marca e convertendo visitantes em clientes satisfeitos.</p>
             {isSmallScreen ? (
               <Xarrow
-                start={box3Ref}
-                end={box4Ref}
+                start="box-3"
+                end="box-4"
                 startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
@@ -121,9 +127,9 @@ function App() {
               />
             ) : (
               <Xarrow
-                start={box3Ref}
-                end={box4Ref}
-                startAnchor="right"
+                start="box-3"
+                end="box-4"
+                startAnchor="bottom"
                 endAnchor="top"
                 path="grid"
                 curveness={1}
@@ -132,7 +138,9 @@ function App() {
           </div>
         </div>
         <div className="box" id='box-right-4'>
-          <img src={box_r} alt="" ref={box4Ref}/>
+          <div id='box-4'>
+            <img src={box_r} alt="" ref={box4Ref}/>
+          </div>
           <div className="second-info-text right-text">
             <h2>sales <span>performance</span></h2>
             <p>Nosso programa dedicado à alavancagem comercial. Não é apenas um programa; é um catalisador para o seu sucesso comercial. Com estratégias personalizadas, treinamento eficaz e um olhar atento às tendências do mercado, estamos comprometidos em impulsionar sua empresa para novas alturas.</p>
