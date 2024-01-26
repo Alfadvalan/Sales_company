@@ -1,13 +1,8 @@
 import Xarrow from 'react-xarrows';
-import { logo, arrow, box_l, box_r } from './assets/images';
-import { useRef } from 'react';
+import { logo, arrow } from './assets/images';
 import './App.css';
 
 function App() {
-  const box1Ref = useRef(null);
-  const box2Ref = useRef(null);
-  const box3Ref = useRef(null);
-  const box4Ref = useRef(null);
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -48,69 +43,32 @@ function App() {
         <h2>CONHEÇA O O.P.W.P</h2>
         <p>NOSSOS PROGRAMAS DE MARKETING</p>
       </div>
-      <div className="second-info-container">
-        <div className="box mobile-after" id='box-left-1' >
-          <div id='box-1'>
-            <img src={box_l} alt="" ref={box1Ref}/>
+      <div className="box-wrapper">
+          <div className="box-left left-right-line left-1" >
+            <div className="box-left-text"  >
+              <h2>sales <span>on</span></h2>
+              <p>Nossa solução de gerenciamento de redes sociais. Vamos além da simples gestão; criamos conteúdo envolvente, aumentamos o engajamento e posicionamos sua marca como líder no cenário digital.</p>
+            </div>     
           </div>
-          <div className="second-info-text left-text"  >
-            <h2>sales <span>on</span></h2>
-            <p>Nossa solução de gerenciamento de redes sociais. Vamos além da simples gestão; criamos conteúdo envolvente, aumentamos o engajamento e posicionamos sua marca como líder no cenário digital.</p>
-              <Xarrow
-                start="box-1"
-                end="box-2"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
+          <div className="box-right right-top-line right-left-line" id='right-1' >
+            <div className="box-right-text"  >
+              <h2>sales <span>pulse</span></h2>
+              <p>É  o ritmo acelerado dos seus anúncios online. Não lançamos apenas anúncios; orquestramos uma sinfonia digital que ressoa com seu público-alvo. Das estratégias de segmentação à análise de desempenho, garantimos que cada anúncio seja uma nota perfeita para o crescimento do seu negócio.</p>
+            </div>     
           </div>
-          
-        </div>
-        <div className="box mobile-after" id='box-right-2' >
-          <div id='box-2'>
-            <img src={box_r} alt="" ref={box2Ref}/>
+          <div className="box-left left-top-line left-right-line" id='left-2' >
+            <div className="box-left-text"  >
+              <h2>sales <span>web</span></h2>
+              <p>Nossa solução para sites e landing pages. É sobre dar vida à sua presença digital. Desde a concepção até a otimização contínua, garantimos que sua presença online seja uma poderosa extensão do seu negócio, capturando a essência da sua marca e convertendo visitantes em clientes satisfeitos.</p>
+            </div>     
           </div>
-          <div className="second-info-text right-text" id='box-2'>
-            <h2>sales <span>pulse</span></h2>
-            <p>É  o ritmo acelerado dos seus anúncios online. Não lançamos apenas anúncios; orquestramos uma sinfonia digital que ressoa com seu público-alvo. Das estratégias de segmentação à análise de desempenho, garantimos que cada anúncio seja uma nota perfeita para o crescimento do seu negócio.</p>
-              <Xarrow
-                start="box-2"
-                end="box-3"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
+          <div className="box-right right-top-line" id='right-2' >
+            <div className="box-right-text"  >
+              <h2>sales <span>performance</span></h2>
+              <p>Nosso programa dedicado à alavancagem comercial. Não é apenas um programa; é um catalisador para o seu sucesso comercial. Com estratégias personalizadas, treinamento eficaz e um olhar atento às tendências do mercado, estamos comprometidos em impulsionar sua empresa para novas alturas.</p>
+            </div>     
           </div>
         </div>
-        <div className="box mobile-after" id='box-left-3'>
-          <div id='box-3'>
-            <img src={box_l} alt="" ref={box3Ref}/>
-          </div>
-          <div className="second-info-text left-text" id='box-3'>
-            <h2>sales <span>web</span></h2>
-            <p>Nossa solução para sites e landing pages. É sobre dar vida à sua presença digital. Desde a concepção até a otimização contínua, garantimos que sua presença online seja uma poderosa extensão do seu negócio, capturando a essência da sua marca e convertendo visitantes em clientes satisfeitos.</p>
-              <Xarrow
-                start="box-3"
-                end="box-4"
-                startAnchor="bottom"
-                endAnchor="top"
-                path="grid"
-                curveness={1}
-              />
-          </div>
-        </div>
-        <div className="box" id='box-right-4'>
-          <div id='box-4'>
-            <img src={box_r} alt="" ref={box4Ref}/>
-          </div>
-          <div className="second-info-text right-text">
-            <h2>sales <span>performance</span></h2>
-            <p>Nosso programa dedicado à alavancagem comercial. Não é apenas um programa; é um catalisador para o seu sucesso comercial. Com estratégias personalizadas, treinamento eficaz e um olhar atento às tendências do mercado, estamos comprometidos em impulsionar sua empresa para novas alturas.</p>
-          </div>
-        </div>
-      </div>
       <div className="button second-button">
         <button onClick={buttonClick}>eu quero vender mais</button>
       </div>
