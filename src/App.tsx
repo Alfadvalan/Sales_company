@@ -23,15 +23,16 @@ function App() {
           <img src={logo} alt="" />
         </div>
         <div className="main-text">
+          <p className='primeroTexto'>MAIS QUE UMA ASSESSORIA EM MARKETING</p>
           <h1>
-            mais que uma assessoria em marketing
+          ASSESSORIA FOCADA EM MARKETING PARA <span>PROTEÇÃO VEICULAR</span>
           </h1>
           <p>
             Somos seu parceiro estratégico na jornada para o sucesso. Nossa abordagem focada em resultados não é apenas sobre criar uma presença digital notável; é sobre transformar cliques em clientes satisfeitos.
           </p>
         </div>
         <div className="button main-button">
-          <button onClick={buttonClick}>eu quero vender mais</button>
+          <button onClick={buttonClick}>EU QUERO TER MAIS ADESÕES!</button>
         </div>
         <div className="main-scroll">
           <img src={arrow} alt="" onClick={scrollToBottom} />
@@ -80,7 +81,7 @@ function App() {
       <div className="last-box-container">
         <div className="box-out">
           <div className="box-in">
-            <h3>Receita <br />estagnada</h3>
+            <h3>Adesões <br />estagnada</h3>
           </div>
         </div>
         <div className="box-out">
@@ -95,7 +96,7 @@ function App() {
         </div>
         <div className="box-out">
           <div className="box-in">
-            <h3>Clientes desinteressados</h3>
+            <h3>Associados desinteressados</h3>
           </div>
         </div>
       </div>
@@ -109,7 +110,7 @@ function App() {
           <h3>Hoje você pode receber nossa assessoria completa de marketing</h3>
           <p>PELO PREÇO DE UM ÚNICO FUNCIONÁRIO!</p>
           <div className="button last-button">
-            <button onClick={buttonClick}>eu quero vender mais</button>
+            <button onClick={buttonClick}>EU QUERO TER MAIS ADESÕES!</button>
           </div>
         </div>
       </div>

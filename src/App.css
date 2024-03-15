@@ -105,16 +105,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
+  gap: 1rem
 }
 
 .main-logo {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
-  margin-top: 5%;
 }
 
 .main-logo img {
@@ -132,9 +129,7 @@ main {
 }
 
 .main-scroll {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 2%;
+
 }
 
 .main-scroll img {
@@ -379,23 +374,14 @@ span {
 
   .main-div {
     width: 85%;
-    gap: 1rem;
   }
 
-  .main-logo {
-    margin-top: 10%;
-  }
 
-  .main-scroll {
-    margin-bottom: 5%;
-  }
+
+
 
   .main-text p {
     font-size: 3.7vw;
-  }
-
-  .main-text {
-    padding-bottom: 20%;
   }
 
   /* SECOND SECTION */
