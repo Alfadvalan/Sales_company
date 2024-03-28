@@ -25,7 +25,7 @@ function App() {
         <div className="main-text">
           <p className='primeroTexto'>MAIS QUE UMA ASSESSORIA EM MARKETING</p>
           <h1>
-          ASSESSORIA FOCADA EM MARKETING PARA <span>PROTEÇÃO VEICULAR</span>
+          ASSESSORIA FOCADA EM MARKETING PARA PROTEÇÃO <span id ="protecao"> VEICULAR</span>
           </h1>
           <p>
             Somos seu parceiro estratégico na jornada para o sucesso. Nossa abordagem focada em resultados não é apenas sobre criar uma presença digital notável; é sobre transformar cliques em clientes satisfeitos.
